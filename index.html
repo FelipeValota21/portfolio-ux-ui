@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Felipe Valota - Product Designer & UI/UX">
+    <title>Felipe Valota | Product Designer</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo"></div> 
+            <nav class="nav-right">
+                <button id="lang-toggle" class="lang-btn">
+                    <span class="lang-text">PT</span>
+                    <span class="divider">/</span>
+                    <span class="lang-text">EN</span>
+                </button>
+
+                <a href="mailto:contato.felipevalota@gmail.com" class="nav-link" data-i18n="nav_email">Email</a>
+                
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">
+                    <span class="icon-sun">☼</span>
+                    <span class="icon-moon">☾</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="eyebrow" data-i18n="hero_eyebrow">Portfolio</span>
+                <h1 class="hero-title">Felipe Valota</h1>
+                <h2 class="hero-subtitle" data-i18n="hero_role">Product Designer UI/UX</h2>
+                
+                <p class="hero-bio" data-i18n="hero_bio">
+                    Transformo requisitos complexos em interfaces limpas e intuitivas. 
+                    Design focado em resolver problemas reais do usuário.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" data-i18n="btn_projects">Ver Projetos</a>
+                    <a href="https://wa.me/5567999493110" class="btn btn-secondary" data-i18n="btn_contact">Vamos conversar</a>
+                </div>
+
+                <div class="career-status">
+                    <span class="career-label" data-i18n="current_role_desc">
+                        Atualmente liderando o Design System e UX do ERP na:
+                    </span>
+                    <div class="company-badge">
+                        <img src="./assets/logo-ap-net-mini.svg" alt="Logo APROMS Net" class="company-logo">
+                        <span>APROMS Net</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 data-i18n="section_work">Trabalhos Recentes</h3>
+                    <div class="slider-nav">
+                        <button class="swiper-prev" aria-label="Previous">←</button>
+                        <button class="swiper-next" aria-label="Next">→</button>
+                    </div>
+                </div>
+
+                <div class="swiper project-swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <article class="project-card">
+                                <div class="card-image">
+                                    <img src="./assets/sign-docs.png" alt="Sign Docs Interface">
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-tags">
+                                        <span class="tag">Web</span>
+                                        <span class="tag">SaaS</span>
+                                    </div>
+                                    <h4>Sign Docs</h4>
+                                    <p data-i18n="p1_desc">Plataforma de assinatura digital focada em reduzir a burocracia corporativa.</p>
+                                    <a href="https://www.figma.com/design/NcqeVCzxngYTkxjqQQ06U0/assinatura-digital?node-id=0-1&p=f&t=X18YIaPqc4t7vBGF-0" target="_blank" class="btn-link">
+                                        <span data-i18n="btn_figma">Abrir no Figma</span> ↗
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="project-card">
+                                <div class="card-image">
+                                    <img src="./assets/joga-junto.png" alt="Joga Junto App">
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-tags">
+                                        <span class="tag">Mobile</span>
+                                        <span class="tag">Sports</span>
+                                    </div>
+                                    <h4>Joga Junto</h4>
+                                    <p data-i18n="p2_desc">App para organizar partidas amadoras de forma rápida e intuitiva.</p>
+                                    <a href="https://www.figma.com/design/4xwGUtVKrlIDz5xhglZGsc/JogaJunto?node-id=2-2" target="_blank" class="btn-link">
+                                        <span data-i18n="btn_figma">Abrir no Figma</span> ↗
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="project-card">
+                                <div class="card-image">
+                                    <img src="./assets/portifolio-fernanda.png" alt="Portfolio Fernanda Avanço">
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-tags">
+                                        <span class="tag">Web</span>
+                                        <span class="tag">Portfolio</span>
+                                    </div>
+                                    <h4>Fernanda Avanço</h4>
+                                    <p data-i18n="p3_desc">Estratégia visual para portfólio Full-Stack com foco em conversão de recrutadores.</p>
+                                    <a href="https://www.figma.com/design/B3kLyeouEUJxYmAdxLvqY9/portfolio-fernanda-avanco?node-id=3-47&p=f" target="_blank" class="btn-link">
+                                        <span data-i18n="btn_figma">Abrir no Figma</span> ↗
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="project-card">
+                                <div class="card-image">
+                                    <img src="./assets/portifolio-leonardo.png" alt="Portfolio Leonardo Souza">
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-tags">
+                                        <span class="tag">Web</span>
+                                        <span class="tag">Portfolio</span>
+                                    </div>
+                                    <h4>Leonardo Souza</h4>
+                                    <p data-i18n="p4_desc">Identidade visual minimalista para destacar as habilidades técnicas do desenvolvedor.</p>
+                                    <a href="https://www.figma.com/design/ibgtXU43Lf9j9BFr6TVc56/portfolio-leleco?node-id=3-47&p=f" target="_blank" class="btn-link">
+                                        <span data-i18n="btn_figma">Abrir no Figma</span> ↗
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; <span id="current-year"></span> Felipe Valota. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/felipe-valota?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        /* --------------------------------------------------
+           0. AUTO YEAR (NOVO)
+           -------------------------------------------------- */
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        /* --------------------------------------------------
+           1. TRANSLATION DATA & LOGIC
+           -------------------------------------------------- */
+        const translations = {
+            pt: {
+                nav_email: "Email",
+                hero_eyebrow: "Portfolio",
+                hero_role: "Product Designer UI/UX",
+                hero_bio: "Transformo requisitos complexos em interfaces limpas e intuitivas. Design focado em resolver problemas reais do usuário.",
+                btn_projects: "Ver Projetos",
+                btn_contact: "Vamos conversar",
+                current_role_desc: "Atualmente liderando o Design System e UX do ERP na:",
+                section_work: "Trabalhos Recentes",
+                btn_figma: "Abrir no Figma",
+                footer_rights: "Todos os direitos reservados.",
+                p1_desc: "Plataforma de assinatura digital focada em reduzir a burocracia corporativa.",
+                p2_desc: "App para organizar partidas amadoras de forma rápida e intuitiva.",
+                p3_desc: "Estratégia visual para portfólio Full-Stack com foco em conversão de recrutadores.",
+                p4_desc: "Identidade visual minimalista para destacar as habilidades técnicas do desenvolvedor."
+            },
+            en: {
+                nav_email: "Email",
+                hero_eyebrow: "Portfolio",
+                hero_role: "Product Designer UI/UX",
+                hero_bio: "Turning complex requirements into clean, intuitive interfaces. Obsessed with solving real user problems.",
+                btn_projects: "View Projects",
+                btn_contact: "Let's Talk",
+                current_role_desc: "Currently leading Design System & UX for the ERP at:",
+                section_work: "Selected Works",
+                btn_figma: "Open in Figma",
+                footer_rights: "All rights reserved.",
+                p1_desc: "Digital signature platform focused on reducing corporate bureaucracy.",
+                p2_desc: "Mobile app to organize amateur sports matches quickly and intuitively.",
+                p3_desc: "Visual strategy for a Full-Stack portfolio focused on recruiter conversion.",
+                p4_desc: "Minimalist visual identity to highlight the developer's technical skills."
+            }
+        };
+
+        const langToggle = document.getElementById('lang-toggle');
+        const savedLang = localStorage.getItem('lang') || 'pt';
+        
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            localStorage.setItem('lang', lang);
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            if(lang === 'pt') {
+                langToggle.innerHTML = `<span style="color:var(--text-main)">PT</span> <span class="divider">/</span> <span style="color:var(--text-light)">EN</span>`;
+            } else {
+                langToggle.innerHTML = `<span style="color:var(--text-light)">PT</span> <span class="divider">/</span> <span style="color:var(--text-main)">EN</span>`;
+            }
+        }
+
+        setLanguage(savedLang);
+
+        langToggle.addEventListener('click', () => {
+            const current = localStorage.getItem('lang') || 'pt';
+            const newLang = current === 'pt' ? 'en' : 'pt';
+            setLanguage(newLang);
+        });
+
+        /* --------------------------------------------------
+           2. THEME TOGGLE
+           -------------------------------------------------- */
+        const themeBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme) {
+            htmlElement.setAttribute('data-theme', savedTheme);
+        } else if (systemPrefersDark) {
+            htmlElement.setAttribute('data-theme', 'dark');
+        }
+
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        /* --------------------------------------------------
+           3. SWIPER INIT
+           -------------------------------------------------- */
+        const swiper = new Swiper('.project-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            speed: 600,
+            grabCursor: true,
+            keyboard: { enabled: true },
+            navigation: { nextEl: '.swiper-next', prevEl: '.swiper-prev' },
+            pagination: { el: '.swiper-pagination', clickable: true, dynamicBullets: true },
+            breakpoints: {
+                640: { slidesPerView: 2, spaceBetween: 24 },
+                1024: { slidesPerView: 3, spaceBetween: 32 }
+            }
+        });
+    </script>
+</body>
+</html>
